@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #8B8B8B;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FAFAFA
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: #000000;
+}
+
+/* header */
+.header {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.header__image {
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  padding: 40px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.header__text {
+  /* text-align: center; */
+  padding-bottom: 30px;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__button {
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 11px 31px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.header__button--primary {
+  background-color: #407BFF;
+}
+
+.header__button--secondary {
+  background-color: #8B8B8B;
+}
+
+/* sluzby */
+
+.sluzby {
+
+  margin-top: 60px;
+}
+
+.sluzby--bottom {
+  padding-bottom: 60px;
+}
+
+.sluzby h2 {
+  padding-bottom: 20px;
+}
+
+.sluzby,
+.header {
+  text-align: center;
+}
+
+/* .sluzby__popis */
+
+.sluzby__text {
+  /* text-align: center; */
+  padding-bottom: 28px;
+}
+
+.sluzby__items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sluzba__item {
+  display: flex;
+  gap: 30px;
+  background-color: #FFFFFF;
+  align-items: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 640px) {
+  .header__buttons {
+    flex-direction: row;
+  }
+
+  .header__text,
+  .sluzby__text {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .sluzby__text {
+    padding-bottom: 40px;
+  }
+
+  .sluzby__items {
+    flex-direction: row;
+  }
+
+  .sluzba__item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    padding: 130px 80px;
+  }
+
+  .header {
+    flex-direction: row-reverse;
+  }
+
+  .sluzby,
+  .header {
+    text-align: left;
+  }
+
+  .sluzby__text {
+    padding: 0
+  }
+
+  .flex {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .flex--reverse {
+    flex-direction: row-reverse;
+
+  }
+
+
+
+
+}
